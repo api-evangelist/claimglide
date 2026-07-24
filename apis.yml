@@ -1,22 +1,73 @@
 aid: claimglide
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/claimglide.png
 name: Claimglide
-description: Claimglide is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Claimglide (ClaimGlide) is an AI-powered software platform that automates the
+  end-to-end prior-authorization process for private medical practices and
+  healthcare providers. It generates prior-auth submissions using payer-approved
+  language, auto-pulls clinical data from EMR systems, follows up with payers,
+  tracks authorization timelines, and auto-generates appeal letters to increase
+  the share of prior-auths approved and shorten turnaround time. Claimglide
+  integrates with major EMR/EHR platforms including eClinicalWorks, athenahealth,
+  NextGen Healthcare, and ModMed, and states HIPAA compliance. Founded in 2025 in
+  Seattle by Nami Lindquist and backed by Y Combinator (Winter 2026 batch), the
+  company was added to the API Evangelist network as a portfolio lead. No public
+  API, developer documentation, or developer portal is published at this time.
 url: https://raw.githubusercontent.com/api-evangelist/claimglide/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
+x-yc-batch: Winter 2026
+x-founded: '2025'
+x-location: Seattle, WA, USA
+x-founder: Nami Lindquist
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-emr-integrations:
+- eClinicalWorks
+- athenahealth
+- NextGen Healthcare
+- ModMed
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Digital Health
+- Prior Authorization
+- Health Insurance
+- Revenue Cycle Management
+- Medical Claims
+- Artificial Intelligence
+- Appeals
 apis: []
+common:
+- type: DomainSecurity
+  url: security/claimglide-domain-security.yml
+- type: Website
+  url: https://claimglide.com/
+- type: Support
+  url: mailto:contact@claimglide.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
